@@ -1,0 +1,11 @@
+.landing {
+  min-height: calc(100vh - 65px);
+}
+.landing .image-container {
+  @apply rounded-[30px] border-2 border-[#3b1e72] overflow-hidden transition-all duration-500 rotate-[4deg] hover:rotate-0 hover:border-blue ;
+  box-shadow: 0 0 20px rgba(77, 40, 146, 0.5);
+}
+.landing .image-container:hover {
+  box-shadow: 0 0 20px var(--blue);
+}
+
