@@ -24,7 +24,7 @@ const ResumeComponent = () => {
   const education = [
     {
       date: "2020 - 2025",
-      title: " Computers and Systems Engineering",
+      title: "Bachelor of Computers and Systems Engineering",
       location: "Zagazig University",
       icon: <FaGraduationCap className="text-[20px] sm:text-[25px]" />,
     },

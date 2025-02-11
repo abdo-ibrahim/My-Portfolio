@@ -13,7 +13,7 @@ import portfolio from "../assets/projects/portfolio.png";
 import word_heaps from "../assets/projects/word_heaps.png";
 import todo_list from "../assets/projects/todo_list.png";
 import crop_guard from "../assets/projects/crop_guard.png";
-
+import areeb_event from "../assets/projects/areeb_event.png";
 const Projects = () => {
   // put your projects here
   const projects = [
@@ -30,6 +30,16 @@ const Projects = () => {
       live: "https://crop-guard.me/",
       code: "",
       project_img: crop_guard,
+    },
+    {
+      branding: "Branding",
+      name: "AreebEvent – Event Booking",
+      description:
+        "• Developed a fullstack platform allowing users to browse, search, and book events, with a dedicated admin dashboard for managing events and users.<br>• Implemented secure authentication and role-based authorization using JWT and cookies, and enhanced UX with responsive design, loading states, notifications and multi-language support.",
+      tools: ["React.Js", "TypeScript", "Tailwind CSS", "ReduxToolkit", "Context API", "RESTful API", "Shadcn UI", "Node.js", "Express.js", "MongoDB", "JWT"],
+      live: "https://areebevent-client.vercel.app/",
+      code: "https://github.com/abdo-ibrahim/AreebEvent---Event-Booking-Platform",
+      project_img: areeb_event,
     },
     {
       branding: "Branding",
