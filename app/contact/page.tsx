@@ -21,8 +21,8 @@ const Contact = () => {
           <div className="container">
             <p className="text-center text-white">Want to start a project?</p>
             <Heading_Animate />
-            <Link href="mailto:abdo.ibrahim@gmail.com" className="email flex gap-2 items-center text-white w-fit text-md sm:text-lg md:text-xl lg:text-2xl">
-              abdo.ibrahim@gmail.com
+            <Link href="mailto:abdo.ibrahim411@gmail.com" className="email flex gap-2 items-center text-white w-fit text-md sm:text-lg md:text-xl lg:text-2xl">
+              abdo.ibrahim411@gmail.com
               <div className="arrow-mail flex items-center justify-center border border-white rounded-full p-2">
                 <FaArrowRight />
               </div>
