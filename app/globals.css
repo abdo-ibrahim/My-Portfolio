@@ -52,6 +52,11 @@ p {
 .text-effect {
   background-image: linear-gradient(to right, #8750f7 0%, #fff 80%);
   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .ease {

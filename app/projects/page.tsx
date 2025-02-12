@@ -17,10 +17,10 @@ const Projects = () => {
   const projects = [
     {
       branding: "Branding",
-      name: "Food E-Commerce Platform",
+      name: "Food E-Commerce",
       description:
-        "•	Built a responsive interface featuring a Home Page, Shop Page, About Page, Contact Page, Product Details Page, Cart Page, Wishlist Page and dynamic product filtering and an optimized cart system.<br>•	Improved load time by 25% using efficient state management with Redux.",
-      tools: ["ReactJs", "TailwindCSS", "ReduxToolkit"],
+        "•	Built a responsive interface featuring a Home, Shop, About, Contact, Product Details, Cart, and Wishlist pages with dynamic filtering and an optimized cart system, enhancing performance through clean code and problem-solving skills.<br>•	•	Improved load time by 25% using efficient state management with Redux Toolkit.",
+      tools: ["ReactJs", "JavaScript", "TailwindCSS", "ReduxToolkit", "Context API", "RESTful API"],
       live: "https://food-e-commerce-zeta.vercel.app/",
       code: "https://github.com/abdo-ibrahim/Food-E-commerce",
       project_img: food_ecommerce,
@@ -28,8 +28,8 @@ const Projects = () => {
     {
       branding: "Entertainment",
       name: "Netflix Clone Platform",
-      description: "•	Designed a streaming platform with dynamic sliders showcasing films, a movie show page, and a personalized watchlist feature.<br>•	Reduced API response time by 20% via optimized calls.",
-      tools: ["ReactJs", "TailwindCSS", "ReduxToolkit"],
+      description: "•	Designed a streaming platform with dynamic sliders showcasing films, a movie show page, and a personalized watchlist feature.<br>•	Reduced API response time by 20% via optimized calls using state management with Redux Toolkit.",
+      tools: ["ReactJs", "JavaScript", "TailwindCSS", "ReduxToolkit", "RESTful API"],
       live: "https://netflix-clone-pied-six.vercel.app/",
       code: "https://github.com/abdo-ibrahim/Netflix_Clone",
       project_img: netflix,
@@ -38,8 +38,8 @@ const Projects = () => {
       branding: "Personal",
       name: "My Portfolio",
       description:
-        "•	Developed a modern and fully responsive portfolio with an amazing UI, high performance, and fast loading speed, reflecting my identity and work.<br>•	Implemented smooth animations and interactive transitions, featuring sections like About, Projects, Skills, and Contact for a professional showcase.",
-      tools: ["Next.js", "TypeScript", "TailwindCSS"],
+        "•	Developed a responsive portfolio with an amazing UI, high performance, and fast loading speed, reflecting my identity and work.<br>•	Implemented animations and transitions, featuring sections like About, Projects, Skills, and Contact for a professional showcase.<br>•	Optimized SEO using Next.js features like server side rendering (SSR) and static generation (SSG) to enhance search rankings.",
+      tools: ["Next.js", "TypeScript", "TailwindCSS", "React Reveal"],
       live: "",
       code: "",
       project_img: portfolio,
@@ -48,8 +48,8 @@ const Projects = () => {
       branding: "Geography",
       name: "Atlas Countries",
       description:
-        "•	Developed an application that fetches and displays all countries from an API, enabling users to search and filter by region for easy navigation.<br>•	Integrated detailed country information and a dark/light mode toggle, enhancing user experience and accessibility.",
-      tools: ["ReactJs", "TailwindCSS", "REST API", "Context API"],
+        "•	Developed a responsive UI that displays countries from an API, enabling users to search and filter by region for easy navigation.<br>•	Integrated country details and dark/light mode, improving user experience and accessibility with clean code and problem-solving.",
+      tools: ["ReactJs", "JavaScript", "TailwindCSS", "RESTful API", "Context API"],
       live: "https://rest-countries-api-beta-green.vercel.app/",
       code: "https://github.com/abdo-ibrahim/Atlas-Countries",
       project_img: atlas_country,
@@ -58,7 +58,7 @@ const Projects = () => {
       branding: "Entertainment",
       name: "Millionaire game",
       description: "•	Simulates a TV show, allowing players to answer trivia with sound effects, featuring smooth interaction, responsive design, and showing problem-solving skills.",
-      tools: ["React.js", "TailwindCSS"],
+      tools: ["React.js", "JavaScript", "TailwindCSS"],
       live: "https://who-will-win-million-game.vercel.app/",
       code: "https://github.com/abdo-ibrahim/Who_will_win_million_game",
       project_img: millionaire,
@@ -77,7 +77,7 @@ const Projects = () => {
       name: "Admin Dashboard",
       description:
         "•	Developed an Admin Dashboard with multiple sections for quick insights, task management, statistics, and user activities.<br>Included Settings, Profile, Projects, Courses, and more, providing a seamless and organized management experience.",
-      tools: ["Html", "CSS"],
+      tools: ["Html", "CSS", "JavaScript"],
       live: "https://abdo-ibrahim.github.io/Admin-Dashboard/",
       code: "https://github.com/abdo-ibrahim/Admin-Dashboard",
       project_img: dashboard,
