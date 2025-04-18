@@ -11,15 +11,31 @@ import millionaire from "../assets/projects/millionaire.png";
 import netflix from "../assets/projects/netflix.png";
 import portfolio from "../assets/projects/portfolio.png";
 import word_heaps from "../assets/projects/word_heaps.png";
+import todo_list from "../assets/projects/todo_list.png";
+import crop_guard from "../assets/projects/todo_list.png";
 
 const Projects = () => {
   // put your projects here
   const projects = [
     {
+      branding: "Smart Agriculture",
+      name: "Crop Guard - Graduation Project",
+      description:
+        "• <strong>Crop Guard</strong> is a smart agricultural platform that uses AI to help farmers detect crop diseases, predict risks, and get actionable recommendations — improving productivity and reducing losses through an integrated web, mobile, and embedded system.<br><br>" +
+        "<strong>My Role: Frontend Web Development & UI/UX</strong><br>" +
+        "• Developed the frontend of an agricultural platform with Next.js and TypeScript, including a dynamic dashboard, e-commerce, and community features, optimized for responsiveness, accessibility, and SEO.<br>" +
+        "• Designed modern UI/UX with smooth animations using Framer Motion, and created reusable components with Shadcn.<br>" +
+        "• Managed state and API integration using Redux Toolkit, Context API, and Axios, ensuring smooth data flow and real-time updates..",
+      tools: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn", "Redux Toolkit", "Context API", "Axios", "RESTful API", "Framer Motion"],
+      live: "https://crop-guard.me/",
+      code: "",
+      project_img: crop_guard,
+    },
+    {
       branding: "Branding",
       name: "Food E-Commerce",
       description:
-        "•	Built a responsive interface featuring a Home, Shop, About, Contact, Product Details, Cart, and Wishlist pages with dynamic filtering and an optimized cart system, enhancing performance through clean code and problem-solving skills.<br>•	•	Improved load time by 25% using efficient state management with Redux Toolkit.",
+        "•	Built a responsive interface featuring a Home, Shop, About, Contact, Product Details, Cart, and Wishlist pages with dynamic filtering and an optimized cart system, enhancing performance through clean code and problem-solving skills.<br>•	Improved load time by 25% using efficient state management with Redux Toolkit.",
       tools: ["ReactJs", "JavaScript", "TailwindCSS", "ReduxToolkit", "Context API", "RESTful API"],
       live: "https://food-e-commerce-zeta.vercel.app/",
       code: "https://github.com/abdo-ibrahim/Food-E-commerce",
@@ -43,6 +59,16 @@ const Projects = () => {
       live: "",
       code: "",
       project_img: portfolio,
+    },
+    {
+      branding: "Productivity",
+      name: "MERN Todo List",
+      description:
+        "• Built a full-stack Todo List app with authentication, protected routes, and persistent sessions using JWT and cookies.<br>• Designed a responsive and user-friendly UI to create, update, delete, and manage todos efficiently.<br>• Integrated backend APIs with MongoDB for data persistence, handling token-based authentication and cookie management.",
+      tools: ["React.Js", "TypeScript", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Context API", "RESTful API", "HTML", "CSS"],
+      live: "https://mern-todo-list-xi-five.vercel.app",
+      code: "https://github.com/abdo-ibrahim/Mern-Todo-List",
+      project_img: todo_list,
     },
     {
       branding: "Geography",
