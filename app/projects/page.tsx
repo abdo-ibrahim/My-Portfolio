@@ -12,7 +12,7 @@ import netflix from "../assets/projects/netflix.png";
 import portfolio from "../assets/projects/portfolio.png";
 import word_heaps from "../assets/projects/word_heaps.png";
 import todo_list from "../assets/projects/todo_list.png";
-import crop_guard from "../assets/projects/todo_list.png";
+import crop_guard from "../assets/projects/crop_guard.png";
 
 const Projects = () => {
   // put your projects here
