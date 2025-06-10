@@ -31,12 +31,12 @@ const Projects = () => {
       code: "",
       project_img: crop_guard,
     },
-    {
+        {
       branding: "Branding",
       name: "AreebEvent – Event Booking",
       description:
         "• Developed a fullstack platform allowing users to browse, search, and book events, with a dedicated admin dashboard for managing events and users.<br>• Implemented secure authentication and role-based authorization using JWT and cookies, and enhanced UX with responsive design, loading states, notifications and multi-language support.",
-      tools: ["React.Js", "TypeScript", "Tailwind CSS", "ReduxToolkit", "Context API", "RESTful API", "Shadcn UI", "Node.js", "Express.js", "MongoDB", "JWT"],
+      tools: ["React.Js", "TypeScript", "Tailwind CSS", "ReduxToolkit", "Context API", "RESTful API", "Shadcn UI", "Node.js", "Express.js", "MongoDB", "JWT" ],
       live: "https://areebevent-client.vercel.app/",
       code: "https://github.com/abdo-ibrahim/AreebEvent---Event-Booking-Platform",
       project_img: areeb_event,
