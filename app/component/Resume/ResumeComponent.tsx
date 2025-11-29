@@ -23,6 +23,12 @@ const ResumeComponent = () => {
   ];
   const education = [
     {
+      date: "2025 - 2026",
+      title: "Information Technology Institute (ITI) - Open Source Track",
+      location: "ITI - Egypt",
+      icon: <FaGraduationCap className="text-[20px] sm:text-[25px]" />,
+    },
+    {
       date: "2020 - 2025",
       title: "Bachelor of Computers and Systems Engineering",
       location: "Zagazig University",

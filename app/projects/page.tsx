@@ -6,6 +6,7 @@ import ParticlesComponent from "../component/utils/ParticlesComponent";
 import { Fade } from "react-awesome-reveal";
 import dashboard from "../assets/projects/dashboard.png";
 import food_ecommerce from "../assets/projects/food_e_commerce.png";
+import ecommerce_api from "../assets/projects/ecommerce_api.webp";
 import atlas_country from "../assets/projects/atlas_country.png";
 import millionaire from "../assets/projects/millionaire.png";
 import netflix from "../assets/projects/netflix.png";
@@ -27,13 +28,13 @@ const Projects = () => {
         "• Designed modern UI/UX with smooth animations using Framer Motion, and created reusable components with Shadcn.<br>" +
         "• Managed state and API integration using Redux Toolkit, Context API, and Axios, ensuring smooth data flow and real-time updates..",
       tools: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn", "Redux Toolkit", "Context API", "Axios", "RESTful API", "Framer Motion"],
-      live: "https://crop-guard.me/",
-      code: "",
+      live: "",
+      code: "https://github.com/abdo-ibrahim/Crop-Guard",
       project_img: crop_guard,
     },
         {
       branding: "Branding",
-      name: "AreebEvent – Event Booking",
+      name: "AreebEvent – Event Booking (Fullstack) ",
       description:
         "• Developed a fullstack platform allowing users to browse, search, and book events, with a dedicated admin dashboard for managing events and users.<br>• Implemented secure authentication and role-based authorization using JWT and cookies, and enhanced UX with responsive design, loading states, notifications and multi-language support.",
       tools: ["React.Js", "TypeScript", "Tailwind CSS", "ReduxToolkit", "Context API", "RESTful API", "Shadcn UI", "Node.js", "Express.js", "MongoDB", "JWT" ],
@@ -43,7 +44,16 @@ const Projects = () => {
     },
     {
       branding: "Branding",
-      name: "Food E-Commerce",
+      name: "E-Commerce RESTful API (Backend)",
+      description:
+        "•	Built a full E-Commerce REST API with authentication, product management, cart, wishlist, coupons, orders, and payments.<br>•	Added advanced features like search, pagination, file uploads, and Stripe checkout.<br>• Improved performance using MongoDB aggregation pipelines & database indexing.",
+      tools: ["Node.js", "Express.js", "MongoDB", "Mongoose", "Cloudinary", "Stripe" ,"JWT", "Multer" , "RESTful API"],
+      code: "https://github.com/abdo-ibrahim/E-Commerce-API",
+      project_img: ecommerce_api,
+    },
+    {
+      branding: "Branding",
+      name: "EasyEat - Food E-commerce (Frontend)",
       description:
         "•	Built a responsive interface featuring a Home, Shop, About, Contact, Product Details, Cart, and Wishlist pages with dynamic filtering and an optimized cart system, enhancing performance through clean code and problem-solving skills.<br>•	Improved load time by 25% using efficient state management with Redux Toolkit.",
       tools: ["ReactJs", "JavaScript", "TailwindCSS", "ReduxToolkit", "Context API", "RESTful API"],
@@ -53,7 +63,7 @@ const Projects = () => {
     },
     {
       branding: "Entertainment",
-      name: "Netflix Clone Platform",
+      name: "Netflix Clone Platform (Frontend)",
       description: "•	Designed a streaming platform with dynamic sliders showcasing films, a movie show page, and a personalized watchlist feature.<br>•	Reduced API response time by 20% via optimized calls using state management with Redux Toolkit.",
       tools: ["ReactJs", "JavaScript", "TailwindCSS", "ReduxToolkit", "RESTful API"],
       live: "https://netflix-clone-pied-six.vercel.app/",
@@ -72,7 +82,7 @@ const Projects = () => {
     },
     {
       branding: "Productivity",
-      name: "MERN Todo List",
+      name: "MERN Todo List (Fullstack)",
       description:
         "• Built a full-stack Todo List app with authentication, protected routes, and persistent sessions using JWT and cookies.<br>• Designed a responsive and user-friendly UI to create, update, delete, and manage todos efficiently.<br>• Integrated backend APIs with MongoDB for data persistence, handling token-based authentication and cookie management.",
       tools: ["React.Js", "TypeScript", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Context API", "RESTful API", "HTML", "CSS"],
@@ -82,7 +92,7 @@ const Projects = () => {
     },
     {
       branding: "Geography",
-      name: "Atlas Countries",
+      name: "Atlas Countries (Fullstack)",
       description:
         "•	Developed a responsive UI that displays countries from an API, enabling users to search and filter by region for easy navigation.<br>•	Integrated country details and dark/light mode, improving user experience and accessibility with clean code and problem-solving.",
       tools: ["ReactJs", "JavaScript", "TailwindCSS", "RESTful API", "Context API"],
@@ -101,7 +111,7 @@ const Projects = () => {
     },
     {
       branding: "Entertainment",
-      name: "Word Heaps",
+      name: "Word Heaps (Java Project)",
       description:
         "•	Created a picture-based word puzzle game with interactive levels, where players guess words based on images, enhanced with sound effects.<br>• Collaborated with friends in college to develop and refine the game, ensuring a fun and engaging experience.",
       tools: ["OOP Java", "JavaFx UI", "CSS"],
@@ -110,7 +120,7 @@ const Projects = () => {
     },
     {
       branding: "Dashboard",
-      name: "Admin Dashboard",
+      name: "Admin Dashboard (Frontend)",
       description:
         "•	Developed an Admin Dashboard with multiple sections for quick insights, task management, statistics, and user activities.<br>Included Settings, Profile, Projects, Courses, and more, providing a seamless and organized management experience.",
       tools: ["Html", "CSS", "JavaScript"],

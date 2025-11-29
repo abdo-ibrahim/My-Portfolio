@@ -1,7 +1,7 @@
 import React from "react";
 import "./Landing.css";
 import Image from "next/image";
-import profile from "../../assets/images/profile.png";
+import profile from "../../assets/images/formal_profile.png";
 import SocialLinks from "./SocialLinks";
 import ImageLight from "../utils/ImageLight";
 import DownloadCv from "../utils/DownloadCv";
@@ -18,10 +18,10 @@ const Landing = () => {
         <div className="info w-full md:w-1/2 text-center md:text-left">
           <Fade direction="up" duration={800} cascade triggerOnce damping={0.25}>
             <span className="text-white text-[30px] md:text-[40px] font-semibold"> I&apos;m Abdulrahman</span>
-            <h1 className="text-white text-effect font-bold text-[30px] sm:text-[40px] md:text-[45px] leading-[1em]">Front-End Developer</h1>
+            <h1 className="text-white text-effect font-bold text-[30px] sm:text-[40px] md:text-[45px] leading-[1em]">Full Stack Developer</h1>
             <div className="md:hidden my-10  max-w-[90%] mx-auto">
               <div className="image-container w-fit mx-auto">
-                <Image src={profile} alt="profile" width={400} height={400} className="object-contain" />
+                <Image src={profile} alt="profile" width={400} height={400} className="object-contain bg-white" />
               </div>
             </div>
             <p className="text-[19px] mt-4 mb-6">I break down complex user experience problems to create integrity focussed solutions that connect billions of people</p>
