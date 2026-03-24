@@ -3,6 +3,8 @@ header .menu ul li a {
   transition: all 0.3s;
   font-weight: 500;
   font-size: 16px;
+  color: #f6f2ff;
+  letter-spacing: 0.02em;
 }
 header .menu ul li a:after {
   content: "";
@@ -13,6 +15,10 @@ header .menu ul li a:after {
   height: 2px;
   background: linear-gradient(to right, #8750f7 0%, #8850f7ad 60%, transparent 100%);
   transition: all 0.3s;
+}
+
+header .menu ul li a:hover {
+  color: #ffffff;
 }
 
 header .menu ul li a:hover:after {
@@ -29,27 +35,59 @@ header .menu ul li a:hover:after {
     justify-content: center;
     align-items: center;
     gap: 32px;
+    background: linear-gradient(90deg, rgba(35, 22, 64, 0.9), rgba(25, 14, 45, 0.9));
+    border: 1px solid rgba(135, 80, 247, 0.28);
+    border-radius: 999px;
+    padding: 8px 20px;
+  }
+
+  .menu-list .nav-link {
+    padding: 6px 4px;
   }
 }
 
 @media (max-width: 768px) {
+  @keyframes revealMenu {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .show-mobile {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 8px);
+    border: 1px solid rgba(135, 80, 247, 0.3);
+    border-radius: 18px;
+    padding: 24px 12px;
     width: 100%;
     left: 0;
-    background: var(--background);
-    height: calc(100vh - 65px);
+    background: rgba(17, 11, 31, 0.95);
+    backdrop-filter: blur(8px);
+    height: calc(100vh - 110px);
     justify-content: center;
     transition: all 0.3s ease-in-out;
+    animation: revealMenu 0.3s ease-in-out;
+    z-index: 1001;
   }
   header .show-mobile li {
-    padding: 20px 0;
+    padding: 12px 0;
     text-align: center;
     transition: all 0.3s ease-in-out;
   }
+
+  header .show-mobile li .nav-link {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
   header .menu ul li a {
     font-size: 20px;
   }

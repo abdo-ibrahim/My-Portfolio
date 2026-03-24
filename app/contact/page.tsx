@@ -10,7 +10,7 @@ import ParticlesComponent from "../component/utils/ParticlesComponent";
 import { Fade } from "react-awesome-reveal";
 const Contact = () => {
   return (
-    <div className="contact bg-background min-h-[calc(100vh-65px)] flex flex-col justify-between relative overflow-hidden">
+    <section id="contact" className="contact bg-background min-h-[calc(100vh-78px)] flex flex-col justify-between relative overflow-hidden">
       <ParticlesComponent />
       <ImageLight />
       <Fade direction="up" duration={800} triggerOnce>
@@ -21,7 +21,7 @@ const Contact = () => {
           <div className="container">
             <p className="text-center text-white">Want to start a project?</p>
             <Heading_Animate />
-            <Link href="mailto:abdo.ibrahim411@gmail.com" className="email flex gap-2 items-center text-white w-fit text-md sm:text-lg md:text-xl lg:text-2xl">
+            <Link href="mailto:abdo.ibrahim411@gmail.com" className="email flex gap-2 items-center text-white w-fit text-md sm:text-lg md:text-xl lg:text-2xl break-all text-center sm:text-left">
               abdo.ibrahim411@gmail.com
               <div className="arrow-mail flex items-center justify-center border border-white rounded-full p-2">
                 <FaArrowRight />
@@ -35,7 +35,7 @@ const Contact = () => {
           <SocialLinks />
         </div>
       </Fade>
-    </div>
+    </section>
   );
 };
 

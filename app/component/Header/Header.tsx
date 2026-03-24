@@ -4,24 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./Navbar";
 import ImageLight from "../utils/ImageLight";
+import { navLinks } from "../../data/navigation";
 const Header = () => {
-  const Links = [
-    { name: "Home", link: "/" },
-    { name: "Resume", link: "/resume" },
-    { name: "Projects", link: "/projects" },
-    { name: "Contact", link: "/contact" },
-  ];
   return (
-    <header className=" bg-foreground relative z-[1000]">
+    <header className="bg-foreground/90 border-b border-[#2e1f4d] sticky top-0 backdrop-blur-md z-[1000]">
       <ImageLight />
 
-      <div className="container text-white flex justify-end items-center min-h-[65px]">
-        <div className="logo">
+      <div className="container text-white flex justify-end items-center min-h-[78px]">
+        <div className="logo shrink-0">
           <Link href="/">
-            <Image src={logo} alt="logo" width={52} height={52} />
+            <Image src={logo} alt="logo" width={50} height={50} className="w-11 h-11 sm:w-[50px] sm:h-[50px]" />
           </Link>
         </div>
-        <Navbar Links={Links} />
+        <Navbar Links={navLinks} />
       </div>
     </header>
   );
