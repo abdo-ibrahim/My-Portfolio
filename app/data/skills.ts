@@ -20,6 +20,34 @@ export type SkillItem = {
   image: StaticImageData;
 };
 
+export type SkillCategory = {
+  category: string;
+  skills: string[];
+};
+
+export const skillCategories: SkillCategory[] = [
+  {
+    category: "Languages",
+    skills: ["JavaScript", "TypeScript", "PHP", "Python", "Java", "C/C++", "SQL", "Bash"],
+  },
+  {
+    category: "Frontend",
+    skills: ["React.js", "Next.js", "Vue.js", "Angular", "Tailwind CSS", "Bootstrap", "Redux Toolkit", "Zustand", "TanStack Query"],
+  },
+  {
+    category: "Backend",
+    skills: ["Node.js", "Express.js", "NestJS", "Laravel", "Django"],
+  },
+  {
+    category: "Databases",
+    skills: ["MongoDB", "SQL Server", "MySQL", "PostgreSQL", "Supabase"],
+  },
+  {
+    category: "Tools & CMS",
+    skills: ["Git", "Docker", "Postman", "Linux", "Figma", "WordPress", "WooCommerce", "Zid", "Salla"],
+  },
+];
+
 export const skills: SkillItem[] = [
   { name: "HTML", image: html },
   { name: "CSS", image: css },
@@ -37,3 +65,4 @@ export const skills: SkillItem[] = [
   { name: "Photoshop", image: photoshop },
   { name: "AdobeXD", image: adobexd },
 ];
+
