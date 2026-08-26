@@ -3,7 +3,9 @@ import examino from "../assets/projects/examino.png";
 import irb from "../assets/projects/irb.png";
 import patenthub from "../assets/projects/patenthub.jpg";
 import golden_teams from "../assets/projects/golden_teams.jpg";
+import qimmah from "../assets/projects/qimmah.jpg";
 import daily_cares from "../assets/projects/daily_cares.jpg";
+import exoproxyl from "../assets/projects/exoproxyl.jpg";
 import crop_guard from "../assets/projects/crop_guard.png";
 import blog from "../assets/projects/blog.png";
 import areeb_event from "../assets/projects/areeb_event.png";
@@ -60,6 +62,14 @@ export const projects: ProjectItem[] = [
     project_img: daily_cares,
   },
   {
+    branding: "E-Commerce & Client Work",
+    name: "Exoproxyl Store",
+    description: "• Customized and optimized a modern store for a skincare brand, enhancing UI/UX and responsiveness.<br>" + "• Created custom styling components and optimized site load speed for smooth user experience.",
+    tools: ["Salla", "CSS", "JavaScript", "HTML"],
+    live: "https://salla.sa/exoproxyl",
+    project_img: exoproxyl,
+  },
+  {
     branding: "EdTech & Client Work",
     name: "PatenteHub -- Driving License Platform",
     description:
@@ -76,6 +86,14 @@ export const projects: ProjectItem[] = [
     tools: ["Salla", "CSS", "JavaScript", "HTML"],
     live: "https://golden-teams.com/",
     project_img: golden_teams,
+  },
+  {
+    branding: "E-Commerce & Client Work",
+    name: "Qimmah Store",
+    description: "• Built and customized a premium WordPress e-commerce store, tailoring layouts using Elementor.<br>" + "• Developed custom PHP functionalities and styled components using HTML, CSS, and JavaScript for an enhanced shopping experience.",
+    tools: ["WordPress", "Elementor", "PHP", "HTML", "CSS", "JavaScript"],
+    live: "https://qimahstore.com/",
+    project_img: qimmah,
   },
 
   {
