@@ -4,8 +4,9 @@ export type NavLinkItem = {
 };
 
 export const navLinks: NavLinkItem[] = [
-  { name: "Home", link: "/#home" },
-  { name: "Resume", link: "/resume#resume" },
-  { name: "Projects", link: "/projects#projects" },
-  { name: "Contact", link: "/contact#contact" },
+  { name: "Home", link: "/" },
+  { name: "Resume", link: "/resume" },
+  { name: "Projects", link: "/projects" },
+  { name: "Contact", link: "/contact" },
 ];
+

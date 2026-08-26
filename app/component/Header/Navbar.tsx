@@ -17,24 +17,14 @@ const Navbar = ({ Links }: Props) => {
   const pathname = usePathname();
 
   const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    const [targetPath, hash] = href.split("#");
-    const normalizedPath = targetPath || "/";
     setIsOpen(false);
 
-    if (pathname === normalizedPath && hash) {
-      event.preventDefault();
-      const section = document.getElementById(hash);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-      return;
-    }
-
-    if (pathname === normalizedPath && !hash) {
+    if (pathname === href) {
       event.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
+
 
   return (
     <nav className="menu flex flex-1 justify-end md:justify-center  ">
