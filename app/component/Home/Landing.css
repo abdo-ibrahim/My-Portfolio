@@ -1,6 +1,9 @@
 .landing {
-  min-height: calc(100vh - 65px);
-  padding: 1.2rem 0 2rem;
+  height: calc(100vh - 79px);
+  min-height: calc(100vh - 79px);
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .landing .image-container {
   @apply rounded-[28px] border-2 border-[#3b1e72] overflow-hidden transition-all duration-500 rotate-[3deg] hover:rotate-0 hover:border-blue;
@@ -16,6 +19,7 @@
   isolation: isolate;
   border-color: rgba(135, 80, 247, 0.65);
   background: linear-gradient(180deg, rgba(41, 24, 78, 0.7), rgba(18, 10, 32, 0.75));
+  max-height: calc(100vh - 140px);
 }
 
 .landing .profile-shell::before {
@@ -33,6 +37,7 @@
   z-index: 2;
   width: 100%;
   height: 100%;
+  max-height: calc(100vh - 160px);
 }
 
 .landing .profile-glow {
@@ -48,15 +53,23 @@
 
 @media (max-width: 768px) {
   .landing {
-    min-height: calc(100vh - 78px);
-    padding: 0.8rem 0 1.8rem;
+    height: auto;
+    min-height: calc(100vh - 79px);
+    padding: 1.5rem 0;
+    overflow: visible;
   }
 
   .landing .profile-shell {
-    max-width: 340px;
+    max-width: 320px;
+    max-height: none;
+  }
+
+  .landing .profile-photo {
+    max-height: none;
   }
 
   .landing .profile-shell::before {
     inset: 8px;
   }
 }
+
