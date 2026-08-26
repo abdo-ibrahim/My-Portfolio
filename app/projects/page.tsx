@@ -5,6 +5,14 @@ import ProjectCard from "../component/Projects/ProjectCard";
 import ParticlesComponent from "../component/utils/ParticlesComponent";
 import { Fade } from "react-awesome-reveal";
 import { projects } from "../data/projects";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Discover web applications, RESTful APIs, AI platforms, and e-commerce projects developed by Abdulrahman Ibrahim.",
+};
+
 const Projects = () => {
   return (
     <section id="projects" className="projects relative py-4 sm:py-6 md:py-8">
@@ -27,3 +35,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
