@@ -45,10 +45,6 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-.card:hover .image img {
-  transform: scale(1.04);
-}
-
 .card .project-media {
   border: 1px solid rgba(135, 80, 247, 0.35);
   background: linear-gradient(180deg, rgba(39, 23, 72, 0.35), rgba(20, 12, 35, 0.6));

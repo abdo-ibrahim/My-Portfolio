@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #160c23;
-  --foreground: #050709;
+  --background: #141217;
+  --foreground: #100e13;
   --gray: #ddd;
   --muted: #b8b1c8;
-  --blue: #8750f7;
+  --blue: #b79adf;
   --hover-blue: #8043fcad;
   --surface: #1a1030;
   --surface-border: #2e1f4d;
@@ -27,7 +27,7 @@ html {
 }
 body {
   font-family: "Work Sans", sans-serif;
-  background: radial-gradient(circle at 10% 15%, #2b1851 0%, #160c23 35%, #120a1f 100%);
+  background: #141217;
   color: #fff;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -47,8 +47,9 @@ ul {
 a {
   text-decoration: none;
 }
-*:focus {
-  outline: none;
+*:focus-visible {
+  outline: 2px solid #c7afe8;
+  outline-offset: 5px;
 }
 
 p {
@@ -149,3 +150,12 @@ p {
     padding: 0 16px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) { html:not([data-motion-preview="true"]) { scroll-behavior: auto; } html:not([data-motion-preview="true"]) *, html:not([data-motion-preview="true"]) *::before, html:not([data-motion-preview="true"]) *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+
+.portfolio-section { position: relative; padding: 52px 0; border-top: 1px solid #342c3d; }
+.project-list { display: grid; gap: 32px; max-width: 1024px; margin: 28px auto 0; }
+.project-list[hidden] { display: none; }
+.project-list-toggle { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 32px 0 8px; }
+.project-list-toggle p { font-size: 12px; color: #a99bb8; }
+@media (max-width: 767px) { .portfolio-section { padding: 32px 0; } }

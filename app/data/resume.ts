@@ -11,6 +11,18 @@ export type ResumeItem = {
 
 export const experience: ResumeItem[] = [
   {
+    date: "Aug. 2026 -- Nov. 2026",
+    title: "Software Engineer",
+    company: "Anytime Software",
+    location: "Remote, Syria",
+    details: [
+      "Develop features for Anylead across lead management, campaign workflows, and a unified inbox.",
+      "Integrate Gmail, Facebook, LinkedIn, and external APIs to support platform connectivity and communication workflows.",
+      "Contribute to backend and frontend development, real-time functionality, and testing to improve application reliability."
+    ],
+    iconType: "briefcase",
+  },
+  {
     date: "Oct. 2025 -- Present",
     title: "Freelance Full-Stack Developer",
     company: "Self-employed (Mostaql - Khamsat)",

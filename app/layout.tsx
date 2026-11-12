@@ -1,6 +1,6 @@
 import Header from "./component/Header/Header";
 import "./globals.css";
-import LoadingScreen from "./component/Loading/LoadingScreen";
+import { MotionConfig } from "./component/utils/MotionProvider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" data-motion-preview={process.env.NODE_ENV === "development" ? "true" : undefined} suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <LoadingScreen>
+        <MotionConfig>
           <Header />
           {children}
-        </LoadingScreen>
+        </MotionConfig>
       </body>
     </html>
   );

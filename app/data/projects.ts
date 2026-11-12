@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import autolead from "../assets/projects/autolead.png";
 import examino from "../assets/projects/examino.png";
 import irb from "../assets/projects/irb.png";
 import patenthub from "../assets/projects/patenthub.jpg";
@@ -33,6 +34,17 @@ export type ProjectItem = {
 };
 
 export const projects: ProjectItem[] = [
+  {
+    branding: "B2B SaaS & Sales Engagement",
+    name: "Anylead — Sales Engagement Platform",
+    description:
+      "• Contribute to a multi-tenant B2B platform for sales outreach and customer communications.<br>" +
+      "• Develop lead management, campaign workflows, and a unified inbox.<br>" +
+      "• Integrate Gmail, Facebook, LinkedIn, and external APIs with real-time communication capabilities.",
+    tools: ["NestJS", "TypeScript", "MongoDB", "Redis", "Socket.IO"],
+    live: "https://engage.anytimehq.io/",
+    project_img: autolead,
+  },
   {
     branding: "AI & EdTech",
     name: "Examino -- AI-Powered Exam Generation Platform",
@@ -225,7 +237,7 @@ export const projects: ProjectItem[] = [
     description:
       "• Developed a responsive portfolio with an amazing UI, high performance, and fast loading speed, reflecting my identity and work.<br>" +
       "• Implemented animations and transitions, featuring sections like About, Projects, Skills, and Contact for a professional showcase.",
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React Reveal"],
+    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
     code: "https://github.com/abdo-ibrahim/My-Portfolio",
     project_img: portfolio,
   },

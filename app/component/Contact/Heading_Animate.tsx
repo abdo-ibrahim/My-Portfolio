@@ -1,27 +1,21 @@
-import React from "react";
+"use client";
+import { usePortfolioReducedMotion } from "../utils/MotionProvider";
+import { useRef } from "react";
+import { motion, useInView } from "motion/react";
 import "./Heading_Animate.css";
-const HeadingAnimate = () => {
+
+export default function HeadingAnimate() {
+  const ref = useRef<HTMLHeadingElement>(null);
+  const inView = useInView(ref, { amount: 0.5 });
+  const reduced = usePortfolioReducedMotion();
   return (
-    <h2 className="section-title font-bold text-center text-[25px] sm:text-[40px] md:text-[82px] lg:text-[110px] bg-transparent gap-0 text-blue select-none pointer-events-none" id="anim">
-      <span>L</span>
-      <span>e</span>
-      <span>t</span>
-      <span>’</span>
-      <span>s</span>
-      <span>&nbsp;</span>
-      <span>h</span>
-      <span>a</span>
-      <span>v</span>
-      <span>e</span>
-      <span>&nbsp;</span>
-      <span>a</span>
-      <span>&nbsp;</span>
-      <span>c</span>
-      <span>h</span>
-      <span>a</span>
-      <span>t</span>
+    <h2 ref={ref} className="contact-wave" aria-label="Let’s have a chat">
+      {Array.from("Let’s have a chat").map((letter, index) => (
+        <motion.span key={index} aria-hidden="true" initial={false}
+          animate={inView && !reduced ? { y: [0, -7, 0, 0], rotateY: [0, 8, 0, 0], color: ["#b79adf", "#ffffff", "#b79adf", "#b79adf"] } : { y: 0, rotateY: 0, color: "#b79adf" }}
+          transition={inView && !reduced ? { duration: 2.4, delay: index * 0.05, repeat: Infinity, ease: "easeInOut", times: [0, 0.12, 0.3, 1] } : { duration: 0 }}
+        >{letter === " " ? "\u00a0" : letter}</motion.span>
+      ))}
     </h2>
   );
-};
-
-export default HeadingAnimate;
+}

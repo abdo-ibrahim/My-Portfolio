@@ -1,4 +1,10 @@
 import Landing from "./component/Home/Landing";
+import ProjectsSection from "./component/Projects/ProjectsSection";
+import ResumeSection from "./component/Resume/ResumeSection";
+import Skills from "./component/Resume/Skills";
+import ContactSection from "./component/Contact/ContactSection";
+import Heading from "./component/utils/Heading";
+import Reveal from "./component/utils/Reveal";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,9 +15,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Landing />
-    </div>
+      <ProjectsSection />
+      <ResumeSection />
+      <section id="skills" className="portfolio-section">
+        <Reveal><Heading heading="My Skills" subheading="The languages, frameworks, and tools I use to build and ship web applications." /></Reveal>
+        <Skills />
+      </section>
+      <ContactSection />
+    </main>
   );
 }
 

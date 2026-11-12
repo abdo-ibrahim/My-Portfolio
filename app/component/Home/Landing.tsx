@@ -1,56 +1,47 @@
-import React from "react";
-import "./Landing.css";
 import Image from "next/image";
+import { FiArrowUpRight, FiArrowRight, FiMapPin } from "react-icons/fi";
 import profile from "../../assets/images/formal_profile.png";
 import SocialLinks from "./SocialLinks";
-import ImageLight from "../utils/ImageLight";
 import DownloadCv from "../utils/DownloadCv";
+import Reveal from "../utils/Reveal";
 import ParticlesComponent from "../utils/ParticlesComponent";
-import { Fade } from "react-awesome-reveal";
+import "./Landing.css";
 
-const Landing = () => {
+export default function Landing() {
   return (
-    <section id="home" className="landing flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="landing">
       <ParticlesComponent />
-      <ImageLight />
-      <div className="container flex items-center flex-col md:flex-row gap-8 lg:gap-12 py-2 md:py-4 h-full justify-between">
-        {/* left part */}
-        <div className="info w-full md:w-1/2 text-center md:text-left flex flex-col justify-center">
-          <Fade direction="up" duration={800} cascade triggerOnce damping={0.25}>
-            <span className="text-white text-[clamp(1.5rem,3.5vw,2.2rem)] font-semibold leading-tight">I&apos;m Abdulrahman</span>
-            <h1 className="text-white text-effect font-bold text-[clamp(1.8rem,4.5vw,3rem)] leading-[1.05] mt-1.5">Full Stack Software Engineer</h1>
-            <div className="md:hidden my-6 max-w-[88%] mx-auto">
-              <div className="profile-shell image-container w-fit mx-auto">
-                <span className="profile-glow" aria-hidden="true" />
-                <Image src={profile} alt="profile" width={340} height={340} className="profile-photo object-contain" />
-              </div>
-            </div>
-            <p className="text-[15px] sm:text-[16px] lg:text-[17.5px] mt-4 mb-6 max-w-[58ch] mx-auto md:mx-0 leading-relaxed text-gray-200">
-              Full Stack Software Engineer experienced in building production-ready web applications, RESTful APIs, and AI-powered platforms using modern technologies. Delivered scalable solutions for 10+ clients with 5-star ratings. Passionate about clean code with 1500+ solved programming problems.
-            </p>
-            {/*start links */}
-            <div className="flex items-center gap-4 flex-col md:flex-row md:gap-5">
+      <div className="container">
+        <div className="hero-grid">
+          <Reveal className="hero-copy">
+            <h1>Abdulrahman<br /><span>Ibrahim.</span></h1>
+            <p className="hero-role">Full Stack Software Engineer</p>
+            <p className="hero-intro">From an idea to a product<br className="hidden lg:block" /> people can use.</p>
+            <p className="hero-description">I build web applications, APIs, and AI-powered systems — with a focus on the details that make them work well. Based in Cairo, working across the stack.</p>
+            <div className="hero-actions">
+              <a href="#projects" className="hero-primary">Explore my work <FiArrowUpRight size={20} /></a>
               <DownloadCv />
-              <div className="flex-1">
-                <SocialLinks />
+            </div>
+            <div className="hero-socials"><SocialLinks /><span className="hero-location"><FiMapPin size={14} /> Cairo, Egypt</span></div>
+          </Reveal>
+          <Reveal className="hero-portrait" delay={0.12}>
+            <figure>
+              <div className="portrait-frame">
+                <Image src={profile} alt="Abdulrahman Ibrahim" priority unoptimized className="portrait-photo" />
               </div>
-            </div>
-            {/* end links */}
-          </Fade>
+              <figcaption><span>Engineer by training.<br /><strong>Builder by practice.</strong></span><span className="portrait-mark" aria-hidden="true">↗</span></figcaption>
+            </figure>
+          </Reveal>
         </div>
-        {/* right part */}
-        <div className="image w-full md:w-1/2 justify-center hidden md:flex md:justify-end items-center">
-          <Fade direction="up" duration={800} cascade triggerOnce damping={0.25}>
-            <div className="profile-shell image-container flex items-center justify-center">
-              <span className="profile-glow" aria-hidden="true" />
-              <Image src={profile} alt="profile" width={380} height={380} className="profile-photo object-contain" />
-            </div>
-          </Fade>
-        </div>
+        <Reveal className="hero-bottom" delay={0.2}>
+          <div className="hero-stats" aria-label="Career highlights">
+            <div><strong>10+</strong><span>Clients served</span></div>
+            <div><strong>5<span>/5</span></strong><span>Client ratings</span></div>
+            <div><strong>1,500+</strong><span>Problems solved</span></div>
+          </div>
+          <a className="latest-work" href="#projects"><span className="latest-label">LATEST WORK</span><span className="latest-name">Anylead <FiArrowRight /></span><span className="latest-detail">B2B sales engagement platform</span></a>
+        </Reveal>
       </div>
     </section>
   );
-};
-
-export default Landing;
-
+}

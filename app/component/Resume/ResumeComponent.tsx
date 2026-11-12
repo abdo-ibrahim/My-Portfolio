@@ -3,7 +3,7 @@ import { FaBriefcase, FaGraduationCap, FaCertificate, FaUsers } from "react-icon
 import Heading from "../utils/Heading";
 import { LiaMedalSolid } from "react-icons/lia";
 import ResumeCard from "./ResumeCard";
-import { Fade } from "react-awesome-reveal";
+import Reveal from "../utils/Reveal";
 import { education, experience, certifications, extracurricular } from "../../data/resume";
 
 const ResumeComponent = () => {
@@ -29,7 +29,7 @@ const ResumeComponent = () => {
         <div className="flex flex-col md:flex-row gap-8 md:gap-6">
           {/* Work Experience */}
           <div className="experience w-full md:w-1/2 flex flex-col items-start">
-            <Fade direction="left" duration={600} triggerOnce className="w-full">
+            <Reveal direction="left" className="w-full">
               <div className="flex items-center gap-2 text-effect mb-6">
                 <LiaMedalSolid size={36} className="text-blue" />
                 <Heading heading="Work & Experience" subheading="" />
@@ -47,12 +47,12 @@ const ResumeComponent = () => {
                   />
                 ))}
               </div>
-            </Fade>
+            </Reveal>
           </div>
 
           {/* Education */}
           <div className="education w-full md:w-1/2 flex flex-col items-start">
-            <Fade direction="right" duration={600} triggerOnce className="w-full">
+            <Reveal direction="right" className="w-full">
               <div className="flex items-center gap-3 text-effect mb-6">
                 <FaGraduationCap size={30} className="text-blue" />
                 <Heading heading="Education" subheading="" />
@@ -70,7 +70,7 @@ const ResumeComponent = () => {
                   />
                 ))}
               </div>
-            </Fade>
+            </Reveal>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ const ResumeComponent = () => {
         <div className="flex flex-col md:flex-row gap-8 md:gap-6 mt-4">
           {/* Certifications */}
           <div className="certifications w-full md:w-1/2 flex flex-col items-start">
-            <Fade direction="left" duration={600} triggerOnce className="w-full">
+            <Reveal direction="left" className="w-full">
               <div className="flex items-center gap-3 text-effect mb-6">
                 <FaCertificate size={26} className="text-blue" />
                 <Heading heading="Certifications" subheading="" />
@@ -96,12 +96,12 @@ const ResumeComponent = () => {
                   />
                 ))}
               </div>
-            </Fade>
+            </Reveal>
           </div>
 
           {/* Extracurricular */}
           <div className="extracurricular w-full md:w-1/2 flex flex-col items-start">
-            <Fade direction="right" duration={600} triggerOnce className="w-full">
+            <Reveal direction="right" className="w-full">
               <div className="flex items-center gap-3 text-effect mb-6">
                 <FaUsers size={28} className="text-blue" />
                 <Heading heading="Leadership & Community" subheading="" />
@@ -119,7 +119,7 @@ const ResumeComponent = () => {
                   />
                 ))}
               </div>
-            </Fade>
+            </Reveal>
           </div>
         </div>
       </div>

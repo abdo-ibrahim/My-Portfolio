@@ -13,7 +13,7 @@ const SocialLinks = () => {
   return (
     <div className="flex items-center gap-2 md:gap-4">
       {socialLinks.map((link, index) => (
-        <Link key={index} href={link.url} target="_blank" className="btn-shape btn-rounded rounded-full p-2">
+        <Link key={index} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.icon} className="btn-shape btn-rounded rounded-full p-2">
           {icons[link.icon]}
         </Link>
       ))}

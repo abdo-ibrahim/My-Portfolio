@@ -51,3 +51,10 @@
     line-height: 1.4;
   }
 }
+
+.contact { text-align: center; background: #100e13; padding-top: 80px; padding-bottom: 24px; }
+.contact-eyebrow { color: #a99bb8; font-size: 11px; letter-spacing: .16em; }
+.contact-socials { display: flex; justify-content: center; margin-top: 32px; }
+.contact-footer { display: flex; justify-content: space-between; gap: 16px; margin-top: 80px; padding-top: 22px; border-top: 1px solid #342c3d; font-size: 12px; color: #a99bb8; }
+.contact-footer a { color: #d4bfee; }
+@media (max-width: 640px) { .contact-footer { flex-direction: column; } }
