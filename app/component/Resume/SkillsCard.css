@@ -9,5 +9,10 @@
 .skill-card:hover { background: var(--surface-raised); color: var(--text); }
 .skill-icon { width: 34px; height: 34px; background: #edece2; display: flex; align-items: center; justify-content: center; border-radius: 6px; flex-shrink: 0; color: #5e6655; }
 .skill-icon img { max-width: 25px; max-height: 25px; object-fit: contain; }
+.skill-icon svg { width: 23px; height: 23px; }
+.skill-category-ai { grid-column: 1 / -1; }
+.skill-category-ai .skill-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 1050px) { .skill-category-ai .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 767px) { .skill-category-ai .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 1050px) { .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 767px) { .skill-categories { grid-template-columns: 1fr; gap: 16px; } .skill-category { padding: 19px; } }

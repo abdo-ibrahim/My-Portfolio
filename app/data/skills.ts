@@ -1,5 +1,6 @@
 // Technology logos: Devicon v2.17.0; other brands use their official site favicon.
-export type SkillItem = { name: string; image: string };
+export type SkillIcon = "llm" | "agents" | "rag" | "openai" | "langchain" | "langgraph" | "vector" | "search" | "embeddings" | "tools";
+export type SkillItem = { name: string } & ({ image: string; icon?: never } | { image?: never; icon: SkillIcon });
 export type SkillCategory = { category: string; skills: SkillItem[] };
 
 export const skillCategories: SkillCategory[] = [
@@ -141,6 +142,21 @@ export const skillCategories: SkillCategory[] = [
         "name": "Redis",
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg"
       }
+    ]
+  },
+  {
+    "category": "AI & LLMs",
+    "skills": [
+      { "name": "LLM Integration", "icon": "llm" },
+      { "name": "AI Agents", "icon": "agents" },
+      { "name": "RAG", "icon": "rag" },
+      { "name": "OpenAI API", "icon": "openai" },
+      { "name": "LangChain", "icon": "langchain" },
+      { "name": "LangGraph", "icon": "langgraph" },
+      { "name": "Vector Databases", "icon": "vector" },
+      { "name": "Semantic Search", "icon": "search" },
+      { "name": "Embeddings", "icon": "embeddings" },
+      { "name": "Tool Calling", "icon": "tools" }
     ]
   },
   {
