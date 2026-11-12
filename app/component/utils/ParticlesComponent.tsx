@@ -1,5 +1,6 @@
 "use client";
 import { usePortfolioReducedMotion } from "./MotionProvider";
+import { useTheme } from "./useTheme";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
@@ -10,6 +11,7 @@ import "./ParticlesComponent.css";
 export default function ParticlesComponent() {
   const [ready, setReady] = useState(false);
   const reduced = usePortfolioReducedMotion();
+  const { theme } = useTheme();
   useEffect(() => {
     let mounted = true;
     initParticlesEngine(async engine => { await loadSlim(engine); }).then(() => { if (mounted) setReady(true); });
@@ -32,8 +34,8 @@ export default function ParticlesComponent() {
       },
     },
     particles: {
-      color: { value: "#d4c6ae" },
-      links: { color: "#b7bba8", distance: 150, enable: true, opacity: 0.2, width: 1 },
+      color: { value: theme.colors["--accent"] },
+      links: { color: theme.colors["--accent"], distance: 150, enable: true, opacity: 0.2, width: 1 },
       move: { enable: !reduced, speed: 0.55, outModes: { default: "out" } },
       number: { density: { enable: true }, value: 75 },
       opacity: { value: 0.4 },
@@ -41,6 +43,6 @@ export default function ParticlesComponent() {
       size: { value: { min: 1, max: 2.5 } },
     },
     detectRetina: true,
-  }), [reduced]);
+  }), [reduced, theme]);
   return <div className="particles-backdrop" aria-hidden="true">{ready && <Particles id="portfolio-particles" options={options} />}</div>;
 }

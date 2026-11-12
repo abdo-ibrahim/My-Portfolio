@@ -3,6 +3,7 @@ import "./globals.css";
 import { MotionConfig } from "./component/utils/MotionProvider";
 import ParticlesComponent from "./component/utils/ParticlesComponent";
 import { Metadata } from "next";
+import { themeInitScript } from "./data/themes";
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +28,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" data-motion-preview={process.env.NODE_ENV === "development" ? "true" : undefined} suppressHydrationWarning>
+    <html lang="en" data-theme="copper" data-motion-preview={process.env.NODE_ENV === "development" ? "true" : undefined} suppressHydrationWarning>
+      <head><script dangerouslySetInnerHTML={{ __html: themeInitScript }} /></head>
       <body suppressHydrationWarning>
         <MotionConfig>
           <ParticlesComponent />

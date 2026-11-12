@@ -1,13 +1,13 @@
-.card { position: relative; overflow: hidden; background: rgb(27 30 27 / .95); border: 1px solid var(--surface-border); border-radius: 12px; transition: border-color .25s, background .25s; }
-.card:hover { border-color: #75745d; background: #1e221e; }
+.card { position: relative; overflow: hidden; background: color-mix(in srgb, var(--foreground) 95%, transparent); border: 1px solid var(--surface-border); border-radius: 12px; transition: border-color .25s, background .25s; }
+.card:hover { border-color: var(--accent); background: var(--surface); }
 .card .project-brand { color: var(--accent); font-family: monospace; font-size: 10px; font-weight: 400; line-height: 1.5; letter-spacing: .08em; }
-.card .project-index { color: #838d7c; font-family: monospace; font-size: 13px; }
+.card .project-index { color: var(--muted); font-family: monospace; font-size: 13px; }
 .card h3 { font-weight: 500; letter-spacing: -.045em; font-size: clamp(1.4rem, 2.2vw, 1.9rem); line-height: 1.2; }
 .card .card-body > p { font-size: 13px; line-height: 1.8; color: var(--muted); }
 .card .project-media { border: 1px solid var(--surface-border); border-radius: 7px; background: var(--background); }
-.card .tool-chip { border: 1px solid var(--surface-border); background: #252b24; color: #c5cbbf; border-radius: 4px; font-size: 10px; padding: 5px 8px; }
+.card .tool-chip { border: 1px solid var(--surface-border); background: var(--surface-raised); color: var(--gray); border-radius: 4px; font-size: 10px; padding: 5px 8px; }
 .card .buttons a { padding: 9px 12px; font-size: 12px; }
-.card .buttons a:first-child { border-color: #6c6551; color: var(--accent); }
+.card .buttons a:first-child { border-color: var(--surface-border); color: var(--accent); }
 .card .buttons a svg { width: 15px; height: 15px; transition: transform .2s; }
 .card .buttons a:hover svg { transform: translate(2px, -2px); }
 @media (max-width: 767px) { .card { border-radius: 10px; } }

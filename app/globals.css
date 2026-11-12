@@ -19,7 +19,7 @@
   --blue: var(--accent);
   --hover-blue: var(--accent-hover);
 }
-* { margin: 0; padding: 0; box-sizing: border-box; scrollbar-width: thin; scrollbar-color: #59604f var(--background); }
+* { margin: 0; padding: 0; box-sizing: border-box; scrollbar-width: thin; scrollbar-color: var(--muted) var(--background); }
 html { scroll-behavior: smooth; scroll-padding-top: 98px; }
 body { isolation: isolate; font-family: "Work Sans", sans-serif; background: var(--background); color: var(--text); text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 body main { position: relative; z-index: 1; }
@@ -47,7 +47,7 @@ p { line-height: 1.75; color: var(--gray); }
 .social-links a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-3px); }
 .social-links svg { width: 18px; height: 18px; stroke-width: 1.7; }
 .interactive-card { transition: background .2s, border-color .2s; }
-.interactive-card:hover { border-color: #6b735f; }
+.interactive-card:hover { border-color: var(--accent); }
 @layer utilities { .container { margin: 0 auto; max-width: 1180px; padding: 0 24px; } }
 .portfolio-section { position: relative; padding: 80px 0; border-top: 1px solid var(--surface-border); }
 .project-list { display: grid; gap: 24px; margin: 0 auto; }

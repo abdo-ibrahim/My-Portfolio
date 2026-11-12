@@ -1,0 +1,17 @@
+.header-controls { display: flex; align-items: center; gap: 28px; }
+.theme-picker { position: relative; flex-shrink: 0; }
+.theme-trigger { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--surface-border); border-radius: 6px; color: var(--accent); background: var(--foreground); cursor: pointer; transition: border-color .2s; }
+.theme-trigger:hover, .theme-trigger[aria-expanded="true"] { border-color: var(--accent); }
+.theme-trigger svg { width: 19px; height: 19px; stroke-width: 1.7; }
+.theme-panel { position: absolute; right: 0; top: calc(100% + 15px); width: 300px; padding: 19px; border: 1px solid var(--surface-border); border-radius: 10px; background: var(--foreground); box-shadow: 0 16px 48px rgb(0 0 0 / .3); z-index: 1002; }
+.theme-panel-heading { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 18px; font-size: 13px; color: var(--text); }
+.theme-current { color: var(--accent); font-size: 11px; }
+.theme-swatches { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.theme-option { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 9px; color: var(--muted); cursor: pointer; }
+.theme-option input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+.theme-swatch { width: 33px; height: 33px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: #151816; pointer-events: none; }
+.theme-swatch svg { width: 17px; height: 17px; stroke-width: 2; }
+.theme-option input:focus-visible + .theme-swatch { outline: 2px solid var(--text); outline-offset: 4px; }
+.theme-option:has(input:checked) { color: var(--text); }
+@media (max-width: 767px) { .header-controls { gap: 9px; flex-direction: row-reverse; } .header-inner { gap: 12px; } .theme-panel { right: -49px; width: min(300px, calc(100vw - 36px)); } }
+@media (max-width: 360px) { .brand-name { font-size: 10px; } .brand-name small { font-size: 7px; } .brand-link { gap: 8px; } .brand-logo { width: 32px; height: 32px; } }
