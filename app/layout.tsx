@@ -1,6 +1,7 @@
 import Header from "./component/Header/Header";
 import "./globals.css";
 import { MotionConfig } from "./component/utils/MotionProvider";
+import ParticlesComponent from "./component/utils/ParticlesComponent";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" data-motion-preview={process.env.NODE_ENV === "development" ? "true" : undefined} suppressHydrationWarning>
       <body suppressHydrationWarning>
         <MotionConfig>
+          <ParticlesComponent />
           <Header />
           {children}
         </MotionConfig>

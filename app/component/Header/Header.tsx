@@ -1,25 +1,19 @@
-import React from "react";
-import logo from "../../assets/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../../assets/images/logo.png";
 import Navbar from "./Navbar";
-
 import { navLinks } from "../../data/navigation";
-const Header = () => {
+
+export default function Header() {
   return (
-    <header className="bg-foreground/90 border-b border-[#2e1f4d] sticky top-0 backdrop-blur-md z-[1000]">
-
-
-      <div className="container text-white flex justify-end items-center min-h-[78px]">
-        <div className="logo shrink-0">
-          <Link href="/#home" aria-label="Abdulrahman Ibrahim home">
-            <Image src={logo} alt="logo" unoptimized loading="eager" width={50} height={50} className="w-11 h-11 sm:w-[50px] sm:h-[50px]" />
-          </Link>
-        </div>
+    <header className="site-header">
+      <div className="container header-inner">
+        <Link href="/#home" aria-label="Abdulrahman Ibrahim home" className="brand-link">
+          <Image src={logo} alt="" unoptimized loading="eager" width={44} height={44} className="brand-logo" />
+          <span className="brand-name">Abdulrahman Ibrahim<small>Software engineer</small></span>
+        </Link>
         <Navbar Links={navLinks} />
       </div>
     </header>
   );
-};
-
-export default Header;
+}

@@ -1,88 +1,13 @@
-@keyframes slideRight {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.card {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 10px 28px rgba(18, 10, 36, 0.35);
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  top: -80px;
-  right: -80px;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(135, 80, 247, 0.28) 0%, rgba(135, 80, 247, 0) 72%);
-  pointer-events: none;
-}
-
-.card:hover {
-  box-shadow: 0 20px 40px rgba(17, 10, 33, 0.5);
-}
-
-.card .project-brand {
-  border: 1px solid rgba(135, 80, 247, 0.42);
-  border-radius: 999px;
-  padding: 5px 10px;
-  background: rgba(39, 23, 72, 0.55);
-}
-
-.card .project-index {
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 999px;
-  padding: 4px 10px;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.card .project-media {
-  border: 1px solid rgba(135, 80, 247, 0.35);
-  background: linear-gradient(180deg, rgba(39, 23, 72, 0.35), rgba(20, 12, 35, 0.6));
-}
-
-.card:hover .project-media {
-  box-shadow:
-    0 12px 26px rgba(15, 9, 30, 0.45),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
-}
-
-.card .tool-chip {
-  border: 1px solid transparent;
-}
-
-.card .tool-chip:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.25);
-}
-
-.card .card-body .buttons a {
-  padding: 7px 14px;
-}
-.card .card-body .buttons a svg {
-  transition: 0.3s all ease-in-out;
-}
-.card .card-body .buttons a:hover svg {
-  animation: slideRight 0.5s linear infinite;
-  transition: 0.3s all ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .card {
-    border-radius: 20px;
-  }
-
-  .card .project-brand,
-  .card .project-index {
-    font-size: 12px;
-  }
-}
+.card { position: relative; overflow: hidden; background: rgb(27 30 27 / .95); border: 1px solid var(--surface-border); border-radius: 12px; transition: border-color .25s, background .25s; }
+.card:hover { border-color: #75745d; background: #1e221e; }
+.card .project-brand { color: var(--accent); font-family: monospace; font-size: 10px; font-weight: 400; line-height: 1.5; letter-spacing: .08em; }
+.card .project-index { color: #838d7c; font-family: monospace; font-size: 13px; }
+.card h3 { font-weight: 500; letter-spacing: -.045em; font-size: clamp(1.4rem, 2.2vw, 1.9rem); line-height: 1.2; }
+.card .card-body > p { font-size: 13px; line-height: 1.8; color: var(--muted); }
+.card .project-media { border: 1px solid var(--surface-border); border-radius: 7px; background: var(--background); }
+.card .tool-chip { border: 1px solid var(--surface-border); background: #252b24; color: #c5cbbf; border-radius: 4px; font-size: 10px; padding: 5px 8px; }
+.card .buttons a { padding: 9px 12px; font-size: 12px; }
+.card .buttons a:first-child { border-color: #6c6551; color: var(--accent); }
+.card .buttons a svg { width: 15px; height: 15px; transition: transform .2s; }
+.card .buttons a:hover svg { transform: translate(2px, -2px); }
+@media (max-width: 767px) { .card { border-radius: 10px; } }

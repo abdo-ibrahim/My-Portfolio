@@ -20,7 +20,7 @@ export default function Home() {
       <ProjectsSection />
       <ResumeSection />
       <section id="skills" className="portfolio-section">
-        <Reveal><Heading heading="My Skills" subheading="The languages, frameworks, and tools I use to build and ship web applications." /></Reveal>
+        <Reveal><Heading eyebrow="03 / Toolkit" heading="Tools of the trade." subheading="The languages, frameworks, and tools I use to build and ship web applications." /></Reveal>
         <Skills />
       </section>
       <ContactSection />

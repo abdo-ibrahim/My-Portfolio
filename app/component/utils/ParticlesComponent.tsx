@@ -22,19 +22,25 @@ export default function ParticlesComponent() {
     pauseOnOutsideViewport: true,
     interactivity: {
       detectsOn: "window",
-      events: { onHover: { enable: !reduced, mode: "grab" } },
-      modes: { grab: { distance: 150, links: { opacity: 0.2 } } },
+      events: {
+        onHover: { enable: !reduced, mode: "repulse" },
+        onClick: { enable: !reduced, mode: "push" },
+      },
+      modes: {
+        repulse: { distance: 150, duration: 0.4 },
+        push: { quantity: 4 },
+      },
     },
     particles: {
-      color: { value: "#c7afe8" },
-      links: { color: "#b79adf", distance: 150, enable: true, opacity: 0.13, width: 1 },
+      color: { value: "#d4c6ae" },
+      links: { color: "#b7bba8", distance: 150, enable: true, opacity: 0.2, width: 1 },
       move: { enable: !reduced, speed: 0.55, outModes: { default: "out" } },
       number: { density: { enable: true }, value: 75 },
-      opacity: { value: 0.3 },
+      opacity: { value: 0.4 },
       shape: { type: "circle" },
       size: { value: { min: 1, max: 2.5 } },
     },
     detectRetina: true,
   }), [reduced]);
-  return <div className="particles-backdrop" aria-hidden="true">{ready && <Particles id="home-particles" options={options} />}</div>;
+  return <div className="particles-backdrop" aria-hidden="true">{ready && <Particles id="portfolio-particles" options={options} />}</div>;
 }

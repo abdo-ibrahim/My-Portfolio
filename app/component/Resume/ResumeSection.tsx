@@ -7,8 +7,8 @@ export default function ResumeSection() {
   return (
     <section id="resume" className="portfolio-section">
       <Reveal>
-        <Heading heading="Experience & Education" subheading="Client work, engineering roles, and the learning behind them." />
-        <DownloadCv />
+        <Heading eyebrow="02 / Background" heading="Experience & education." subheading="Client work, engineering roles, and the learning behind them." />
+        <div className="container resume-download"><DownloadCv /></div>
       </Reveal>
       <ResumeComponent />
     </section>

@@ -5,7 +5,7 @@ import ProjectList from "./ProjectList";
 export default function ProjectsSection() {
   return (
     <section id="projects" className="projects portfolio-section">
-      <Reveal><Heading heading="Selected Work" subheading="A selection of SaaS platforms, AI applications, and projects built for real clients." /></Reveal>
+      <Reveal><Heading eyebrow="01 / Selected work" heading="Things I’ve built." subheading="SaaS platforms, AI applications, and websites built for real clients." /></Reveal>
       <ProjectList />
     </section>
   );

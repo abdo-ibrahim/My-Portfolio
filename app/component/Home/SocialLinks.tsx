@@ -1,23 +1,15 @@
-import Link from "next/link";
-import React from "react";
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FiGithub, FiLinkedin, FiFacebook } from "react-icons/fi";
 import { socialLinks } from "../../data/social";
 
-const SocialLinks = () => {
-  const icons = {
-    github: <FaGithub />,
-    linkedin: <FaLinkedinIn />,
-    facebook: <FaFacebookF />,
-  };
-
+export default function SocialLinks({ showFacebook = true }: { showFacebook?: boolean }) {
+  const icons = { github: <FiGithub />, linkedin: <FiLinkedin />, facebook: <FiFacebook /> };
   return (
-    <div className="flex items-center gap-2 md:gap-4">
-      {socialLinks.map((link, index) => (
-        <Link key={index} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.icon} className="btn-shape btn-rounded rounded-full p-2">
+    <div className="social-links">
+      {socialLinks.filter(link => showFacebook || link.icon !== "facebook").map(link => (
+        <a key={link.icon} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.icon}>
           {icons[link.icon]}
-        </Link>
+        </a>
       ))}
     </div>
   );
-};
-export default SocialLinks;
+}
